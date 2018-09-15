@@ -1,0 +1,64 @@
+// www.sale-thailand.com 2018/06/28
+1. Translate
+    - gtranslate
+        gtranslate.php : gtranslate_menu_item
+    - adforest
+        inc/nav.php : adforest_themeMenu-> apply_filters( "adforest_nav_menu_items", $menu_html, null )
+2. Add the more information to AD
+    Plugins: sb_framework
+        ad_post/custom-category-templates.php : adforestCustomFieldsHTML
+    - Home Page
+        - Featured Ads
+           inc/theme_shortcodes/classes/ads.php : adforest_search_layout_grid_4
+        - Recommended Ads
+           inc/theme_shortcodes/classes/ads.php : adforest_search_layout_grid_4
+        - All Ads
+            inc/theme_shortcodes/classes/ads.php : adforest_search_layout_list_2
+        - Recent Ads(Sider Bar)
+            inc/ads-widgets.php : adforest_search_recent_ad
+        - Recommended Ads(Sider Bar)
+            inc/ads-widgets.php : adforest_search_featured_ad
+            
+    - Search Page
+        - Recommended Ads
+            inc/theme_shortcodes/classes/ads.php : adforest_search_layout_grid_1
+        - Search Result Ads
+            inc/theme_shortcodes/classes/ads.php : adforest_search_layout_list
+            
+    - Search(Category) Page
+        - Recommended Ads
+            inc/theme_shortcodes/classes/ads.php : adforest_search_layout_grid_1
+        - Search Result Ads
+            inc/theme_shortcodes/classes/ads.php : adforest_search_layout_grid_2
+    
+    ...
+    
+3. Adding custom refine search
+    - inc/theme_shortcodes/classes/ads.php : 
+    - inc/theme_shortcodes/classes/ad_post.php : wp_ajax_sb_search_modern
+    - inc/utilities.php : adforest_pagination_modern_search
+    - js/search-modern.js
+
+4. Adding custom social share buttons with some text which will be showed up to the advertiser after posting an ad.
+    - template-parts/ad_style/style-3.php : template-parts/layouts/ad_style/message', 'share'
+    - template-parts/ad_style/message-share.php :
+
+5. Edit product
+    - Back-end Edit
+        plugins/sb_framework/cpt/index.php : 266, 299 package_product_message
+    inc/theme_shortcodes/shortcodes/products_classic.php
+    
+6. SEO
+    - search h1 => h3
+        inc/theme_shortcodes/shortcodes/modern/search_modern.php
+
+/////////////////////////////////////////////////////////////////////////////////////////
+
+https://try.powermapper.com issue fix
+
+/////////////////////////////////////////////////////////////////////////////////////////
+1. Compability
+1.1 An element with role=tab must be contained in, or owned by, an element with role=tablist.
+    - taxonomy-ad_cats.php
+1.2. Each A element must contain text or an IMG with an ALT attribute.
+    - taxonomy-ad_cats.php

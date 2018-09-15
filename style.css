@@ -1,0 +1,45 @@
+/*
+Theme Name: adforest child
+Description: Adforest classified, responsive, multi-purpose, corporate, business theme. It comes with 11 home variations with all necessary pages. Adforest theme filled with extra functionality of modern web technologies. The clean design with latest version of Bootstrap framework makes its fit for anywhere.
+Author: Scripts Bundle
+Theme URI: http://adforest.wp.scriptsbundle.com/demos/
+Author URI: http://glixentech.com/
+Version: 1.0.0
+Template:     adforest
+License: Themeforest Split Licence
+License URI: https://themeforest.net/user/scriptsbundle/
+Text Domain: adforest
+Tags: featured-images, sticky-post, translation-ready
+*/
+#search-price-button{
+    border-color:#444!important;
+}
+#headingfour{
+    height:53px!important;
+}
+.menu-logo > li > a img {
+    height:32px!important;
+}
+#gtranslate_wrapper {
+	display:none !important;
+}
+.hoverTrigger.main > a > img { 
+	height: 16px;
+	margin-top: 17px!important; 
+}
+@media screen and (max-width: 992px) {
+	.hoverTrigger.main > a >  img {
+		height: 16px;
+		margin-top: 5%!important;
+	}
+}
+.hoverTrigger.switcher > a >  img { 
+	height: 16px;
+	margin-top: 1px!important;
+}
+@media screen and (max-width: 992px) {
+	.hoverTrigger.main > a >  img {
+		height: 16px;
+		margin-top: 3%!important;
+	}
+}
