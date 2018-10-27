@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+/*!
+ * animate.css -http://daneden.me/animate
+ * Version - 3.5.1
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2016 Daniel Eden
+ */
+ 
+#gtranslate_wrapper {display:none !important;}
+.mega-menu img { height: 16px!important; }
+.hoverTrigger.main a img { margin-top: 17px!important; }
+@media screen and (max-width: 992px) { .hoverTrigger.main a img { margin-top: 5%!important; } }
+.hoverTrigger.switcher a img { margin-top: 1px!important; }
+@media screen and (max-width: 992px) { .hoverTrigger.main a img { margin-top: 3%!important; } }

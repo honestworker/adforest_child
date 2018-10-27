@@ -57,7 +57,7 @@ class adforest_search_featured_ad extends WP_Widget {
             <!-- Content -->
             <div class="panel-collapse">
                 <div class="panel-body recent-ads">
-                    <div class="featured-slider-3">
+                    <div class="featured-slider-3 owl-carousel owl-theme owl-responsive-1000 owl-loaded">
                     <!-- Featured Ads -->
                     <?php
     					$f_args =  array( 
